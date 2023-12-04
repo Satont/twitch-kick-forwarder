@@ -1,0 +1,23 @@
+{
+  "name": "twitch-kick-forwarder",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx --env-file=.env --watch-path=./src --watch-preserve-output ./src/index.ts",
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "start": "node --env-file=.env ./dist/index.js"
+  },
+  "author": "Satont <satontworldwide@gmail.com",
+  "dependencies": {
+    "@twurple/api": "^7.0.6",
+    "@twurple/auth": "^7.0.6",
+    "@twurple/chat": "^7.0.6",
+    "@types/node": "20.8.1",
+    "form-data": "^4.0.0",
+    "kient": "1.0.1-7",
+    "otpauth": "^9.2.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.2"
+  }
+}
